@@ -1,0 +1,83 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Example without branding
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-large">
+    Your account balance is -£38.18
+  </h1>
+  <p class="lede">
+    This was last updated on the 17th April.<br>
+    Your last monthly direct debit payment for £125 was made on the 1st of April.<br>
+    Your next payment for £125 will be taken on the 1st of May.
+  </p>
+
+    <p>1st – 17th April &nbsp; <span class="font-xsmall">Total charges and energy use</span></p>
+
+  <div class="grid-row">
+
+  <div class="column-one-quarter">
+<div class="data">
+  <span class="data-item bold-xxlarge">68</span>
+</div>
+<p><a href="#">Hide charges</a></p>
+  </div>
+
+  <div class="column-three-quarters">
+<p><a href="#">Show daily consumption charges</a></p>
+  </div>
+
+</div>
+
+  <div class="grid-row">
+  <div class="column-one-quarter">
+	 <h3 class="heading-medium">Electricity</h3>
+</div>
+
+
+  <div class="column-three-quarters">
+
+  	<table>
+  <thead>
+    <tr>
+      <th scope="col">Month you apply</th>
+      <th class="numeric" scope="col">Rate for vehicles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">January</th>
+      <td class="numeric">£165.00</td>
+    </tr>
+    <tr>
+      <th scope="row">February</th>
+      <td class="numeric">£165.00</td>
+    </tr>
+    <tr>
+      <th scope="row">March</th>
+      <td class="numeric">£151.25</td>
+    </tr>
+    <tr>
+      <th scope="row">April</th>
+      <td class="numeric">£136.10</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Consumption charge <span class="">193 kWh at 15.13p</span></p>
+
+</div>
+
+</div>
+
+
+
+
+</main>
+
+{% endblock %}
